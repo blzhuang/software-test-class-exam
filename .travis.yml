@@ -10,9 +10,5 @@ script:
   - make test
   - make gcov
 
-branches:
-  only:
-    - master
-
 after_success:
   - codecov -t 9a26d49f-6d9f-48dd-899e-d189ba2882f0 -X gcov
